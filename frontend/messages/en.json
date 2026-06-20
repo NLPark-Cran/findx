@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "FindX",
+    "description": "Defeat internet trolls with logical weapons"
+  },
+  "nav": {
+    "home": "Home",
+    "battle": "Campaign",
+    "arena": "PvP",
+    "agent": "Agent",
+    "dashboard": "Stats"
+  },
+  "home": {
+    "title": "FindX",
+    "subtitle": "Spot the fallacy, draw your weapon, defeat toxic comments",
+    "start": "Start Campaign",
+    "pvp": "PvP Arena",
+    "agent": "Train Agent"
+  },
+  "battle": {
+    "choose_level": "Choose Level",
+    "choose_level_subtitle": "Higher difficulty means trickier fallacies",
+    "start": "Start Battle",
+    "comment": "Enemy Comment",
+    "actual_fallacies": "Actual Fallacies",
+    "emotion_radar": "Emotion Radar",
+    "weapons": "Logical Weapons",
+    "rebuttal": "Rebuttal",
+    "submit": "Strike",
+    "judging": "Judge is thinking...",
+    "result": "Verdict",
+    "damage": "Damage",
+    "total_damage": "Total Damage",
+    "combo": "Combo",
+    "score": "Score",
+    "next": "Next",
+    "back": "Back",
+    "next_step": "Next Step",
+    "victory": "Victory!",
+    "defeat": "Defeat...",
+    "detect_fallacy": "Step 1: Detect Fallacy",
+    "detect_hint": "What logical fallacies are hidden in this comment? Pick 1-2 that fit best.",
+    "select_weapon": "Step 2: Select Weapon",
+    "write_rebuttal": "Step 3: Write Rebuttal",
+    "detected": "Detected",
+    "selected_weapon": "Selected Weapon",
+    "rebuttal_placeholder": "Explain why this is a fallacy and counter it...",
+    "fallacy_detection": "Detection",
+    "weapon_match": "Weapon",
+    "rebuttal_quality": "Rebuttal"
+  },
+  "arena": {
+    "title": "Live PvP",
+    "create_room": "Create Room",
+    "join_room": "Join Room",
+    "room_id": "Room ID",
+    "nickname": "Nickname",
+    "waiting": "Waiting for opponent...",
+    "round": "Round {round}"
+  },
+  "agent": {
+    "title": "Agent Fighter",
+    "create": "Create Agent",
+    "name": "Name",
+    "model": "Model",
+    "personality": "Personality",
+    "system_prompt": "System Prompt",
+    "weapon_priority": "Weapon Priority",
+    "simulate": "Simulate",
+    "challenge": "Challenge",
+    "leaderboard": "Leaderboard"
+  },
+  "common": {
+    "language": "Language",
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry"
+  }
+}

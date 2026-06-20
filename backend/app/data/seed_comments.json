@@ -1,0 +1,182 @@
+{
+  "game-review": [
+    {
+      "text_cn": "这策划脑子进水了吧？除了骗氪还会什么？全家桶退游！",
+      "text_en": "The devs must be brain-dead. All they know is milking money. Quitting with the whole family!",
+      "emotion": {"anger": 0.95, "sarcasm": 0.3, "fear": 0.0, "disgust": 0.85, "joy": 0.0, "sadness": 0.2, "surprise": 0.1, "contempt": 0.9},
+      "fallacy_types": ["诉诸人身"],
+      "effective_weapons": ["debunk_hammer"],
+      "ineffective_weapons": ["statistical_lens", "evidence_shield"],
+      "explanation_cn": "攻击策划个人而不是讨论游戏设计问题。",
+      "explanation_en": "Attacks the developer personally instead of discussing game design."
+    },
+    {
+      "text_cn": "这次更新稍微削了一点数值，再过几个版本这游戏肯定凉，工作室倒闭指日可待。",
+      "text_en": "They nerfed a tiny stat this patch; in a few more patches this game will definitely die and the studio will go bankrupt.",
+      "emotion": {"anger": 0.6, "sarcasm": 0.2, "fear": 0.7, "disgust": 0.4, "joy": 0.0, "sadness": 0.5, "surprise": 0.2, "contempt": 0.5},
+      "fallacy_types": ["滑坡谬误"],
+      "effective_weapons": ["reductio_sword"],
+      "ineffective_weapons": ["evidence_shield"],
+      "explanation_cn": "把小削弱推导为游戏必然凉凉。",
+      "explanation_en": "Slides from a small nerf to inevitable doom."
+    },
+    {
+      "text_cn": "你说这角色不强？那高手榜单上前十明明都在用，你不会玩就别怪角色。",
+      "text_en": "You say this character is weak? The top ten leaderboard players all use it. If you can't play, don't blame the character.",
+      "emotion": {"anger": 0.7, "sarcasm": 0.6, "fear": 0.0, "disgust": 0.5, "joy": 0.1, "sadness": 0.1, "surprise": 0.2, "contempt": 0.8},
+      "fallacy_types": ["诉诸权威"],
+      "effective_weapons": ["evidence_shield"],
+      "ineffective_weapons": ["debunk_hammer"],
+      "explanation_cn": "用高手榜单替代实际数据分析角色强度。",
+      "explanation_en": "Uses leaderboard popularity as proof of strength without real analysis."
+    },
+    {
+      "text_cn": "这游戏要么逼氪，要么肝死，正常人谁玩得下去？",
+      "text_en": "This game either forces you to pay or grind to death. What normal person can keep playing?",
+      "emotion": {"anger": 0.8, "sarcasm": 0.4, "fear": 0.2, "disgust": 0.7, "joy": 0.0, "sadness": 0.3, "surprise": 0.1, "contempt": 0.7},
+      "fallacy_types": ["非黑即白 / 虚假两难"],
+      "effective_weapons": ["socratic_trap", "clarifier"],
+      "ineffective_weapons": ["statistical_lens"],
+      "explanation_cn": "只给两个极端选项，忽略中间玩法。",
+      "explanation_en": "Presents only two extremes and ignores middle-ground playstyles."
+    }
+  ],
+  "social-news": [
+    {
+      "text_cn": "他连小学都没毕业，你凭什么相信他对房价的判断？",
+      "text_en": "He didn't even graduate from elementary school. How can you trust his judgment on housing prices?",
+      "emotion": {"anger": 0.6, "sarcasm": 0.4, "fear": 0.1, "disgust": 0.6, "joy": 0.0, "sadness": 0.1, "surprise": 0.2, "contempt": 0.8},
+      "fallacy_types": ["诉诸人身"],
+      "effective_weapons": ["debunk_hammer"],
+      "ineffective_weapons": ["statistical_lens"],
+      "explanation_cn": "用学历攻击对方，而非反驳观点本身。",
+      "explanation_en": "Attacks the speaker's education rather than the argument."
+    },
+    {
+      "text_cn": "隔壁市试点了这个政策，经济直接崩盘，我们市要是也实行肯定一样。",
+      "text_en": "The neighboring city tried this policy and its economy collapsed; if our city adopts it, it'll definitely be the same.",
+      "emotion": {"anger": 0.4, "sarcasm": 0.2, "fear": 0.85, "disgust": 0.3, "joy": 0.0, "sadness": 0.3, "surprise": 0.2, "contempt": 0.3},
+      "fallacy_types": ["虚假因果", "以偏概全"],
+      "effective_weapons": ["causal_lens", "statistical_lens"],
+      "ineffective_weapons": ["debunk_hammer"],
+      "explanation_cn": "把两地简单类比，且把崩盘简单归因于政策。",
+      "explanation_en": "Analogizes two cities simplistically and attributes collapse solely to the policy."
+    },
+    {
+      "text_cn": "我身边三个朋友都被裁员了，现在经济根本不行，官方数据都是假的。",
+      "text_en": "Three of my friends got laid off. The economy is terrible; official data is all fake.",
+      "emotion": {"anger": 0.5, "sarcasm": 0.3, "fear": 0.7, "disgust": 0.5, "joy": 0.0, "sadness": 0.6, "surprise": 0.2, "contempt": 0.5},
+      "fallacy_types": ["以偏概全", "幸存者偏差"],
+      "effective_weapons": ["statistical_lens"],
+      "ineffective_weapons": ["clarifier"],
+      "explanation_cn": "以个人身边样本推断整体经济状况。",
+      "explanation_en": "Infers overall economic conditions from a personal anecdote."
+    },
+    {
+      "text_cn": "你反对这项政策，你是不是收了境外势力的钱？",
+      "text_en": "You oppose this policy; are you being paid by foreign forces?",
+      "emotion": {"anger": 0.8, "sarcasm": 0.2, "fear": 0.3, "disgust": 0.8, "joy": 0.0, "sadness": 0.1, "surprise": 0.2, "contempt": 0.9},
+      "fallacy_types": ["诉诸人身", "诱导性问题"],
+      "effective_weapons": ["debunk_hammer", "socratic_trap"],
+      "ineffective_weapons": ["evidence_shield"],
+      "explanation_cn": "用动机揣测和 loaded question 代替论证。",
+      "explanation_en": "Uses motive speculation and a loaded question instead of argument."
+    }
+  ],
+  "fan-war": [
+    {
+      "text_cn": "你家哥哥连票房都扛不动，粉丝还好意思吹演技？",
+      "text_en": "Your idol can't even carry the box office; how dare fans brag about acting skills?",
+      "emotion": {"anger": 0.7, "sarcasm": 0.7, "fear": 0.0, "disgust": 0.7, "joy": 0.1, "sadness": 0.1, "surprise": 0.1, "contempt": 0.9},
+      "fallacy_types": ["诉诸人身", "偷换概念"],
+      "effective_weapons": ["debunk_hammer", "clarifier"],
+      "ineffective_weapons": ["statistical_lens"],
+      "explanation_cn": "票房与演技是两个不同维度。",
+      "explanation_en": "Box office and acting skill are different dimensions."
+    },
+    {
+      "text_cn": "正因为哥哥这次造型被黑，所以他越红，黑他的人越多。",
+      "text_en": "Because my idol's styling was criticized this time, that proves he's more popular; the more popular, the more haters.",
+      "emotion": {"anger": 0.4, "sarcasm": 0.5, "fear": 0.1, "disgust": 0.4, "joy": 0.3, "sadness": 0.2, "surprise": 0.1, "contempt": 0.6},
+      "fallacy_types": ["循环论证"],
+      "effective_weapons": ["reductio_sword"],
+      "ineffective_weapons": ["evidence_shield"],
+      "explanation_cn": "用 popularity 解释 hate，又用 hate 证明 popularity。",
+      "explanation_en": "Uses popularity to explain hate and hate to prove popularity."
+    },
+    {
+      "text_cn": "如果这剧不是他演，早就扑街了，所以他演技拯救了全组。",
+      "text_en": "If this drama weren't starring him, it would have flopped long ago, so his acting saved the whole production.",
+      "emotion": {"anger": 0.3, "sarcasm": 0.4, "fear": 0.1, "disgust": 0.3, "joy": 0.4, "sadness": 0.1, "surprise": 0.2, "contempt": 0.5},
+      "fallacy_types": ["虚假因果"],
+      "effective_weapons": ["causal_lens"],
+      "ineffective_weapons": ["debunk_hammer"],
+      "explanation_cn": "把剧集表现单一归因于演员，忽略编剧/导演/市场因素。",
+      "explanation_en": "Attributes show performance solely to the actor while ignoring other factors."
+    }
+  ],
+  "tech-debate": [
+    {
+      "text_cn": "安卓用两年就卡，苹果三年还流畅，所以安卓就是垃圾。",
+      "text_en": "Android lags after two years while iPhones stay smooth for three, so Android is trash.",
+      "emotion": {"anger": 0.6, "sarcasm": 0.3, "fear": 0.0, "disgust": 0.7, "joy": 0.1, "sadness": 0.1, "surprise": 0.1, "contempt": 0.8},
+      "fallacy_types": ["以偏概全", "错误类比"],
+      "effective_weapons": ["statistical_lens"],
+      "ineffective_weapons": ["clarifier"],
+      "explanation_cn": "以个别体验概括整个生态。",
+      "explanation_en": "Generalizes the entire ecosystem from limited experience."
+    },
+    {
+      "text_cn": "乔布斯生前说过用户不知道自己想要什么，所以我们不需要做用户调研。",
+      "text_en": "Steve Jobs said users don't know what they want, so we don't need user research.",
+      "emotion": {"anger": 0.3, "sarcasm": 0.4, "fear": 0.1, "disgust": 0.4, "joy": 0.0, "sadness": 0.1, "surprise": 0.2, "contempt": 0.6},
+      "fallacy_types": ["诉诸权威"],
+      "effective_weapons": ["evidence_shield"],
+      "ineffective_weapons": ["debunk_hammer"],
+      "explanation_cn": "引用名人言论替代具体产品决策论证。",
+      "explanation_en": "Cites a celebrity quote instead of reasoning about product decisions."
+    },
+    {
+      "text_cn": "每次更新后用户骂声一片，这说明更新本身就是错的。",
+      "text_en": "Every update gets tons of complaints, which proves updates themselves are wrong.",
+      "emotion": {"anger": 0.7, "sarcasm": 0.2, "fear": 0.2, "disgust": 0.6, "joy": 0.0, "sadness": 0.2, "surprise": 0.1, "contempt": 0.5},
+      "fallacy_types": ["虚假因果", "诉诸情感"],
+      "effective_weapons": ["causal_lens", "evidence_shield"],
+      "ineffective_weapons": ["clarifier"],
+      "explanation_cn": "把用户情绪等同于更新错误，忽略沉默大多数。",
+      "explanation_en": "Equates user outrage with update failure while ignoring silent users."
+    }
+  ],
+  "food-culture": [
+    {
+      "text_cn": "粽子当然要吃咸的，吃甜粽子的都是异端。",
+      "text_en": "Zongzi must be savory; those who eat sweet zongzi are heretics.",
+      "emotion": {"anger": 0.5, "sarcasm": 0.3, "fear": 0.0, "disgust": 0.6, "joy": 0.1, "sadness": 0.1, "surprise": 0.1, "contempt": 0.8},
+      "fallacy_types": ["非黑即白 / 虚假两难"],
+      "effective_weapons": ["socratic_trap", "clarifier"],
+      "ineffective_weapons": ["statistical_lens"],
+      "explanation_cn": "把口味偏好二元对立并扣帽子。",
+      "explanation_en": "Creates a false dichotomy around taste preference."
+    },
+    {
+      "text_cn": "我奶奶活了九十岁，天天吃咸菜，所以高盐饮食根本不影响健康。",
+      "text_en": "My grandma lived to ninety eating pickled vegetables every day, so high-salt diet doesn't affect health at all.",
+      "emotion": {"anger": 0.3, "sarcasm": 0.4, "fear": 0.1, "disgust": 0.3, "joy": 0.1, "sadness": 0.1, "surprise": 0.2, "contempt": 0.5},
+      "fallacy_types": ["幸存者偏差", "虚假因果"],
+      "effective_weapons": ["statistical_lens", "causal_lens"],
+      "ineffective_weapons": ["clarifier"],
+      "explanation_cn": "以单个长寿案例否定医学统计规律。",
+      "explanation_en": "Uses a single longevity anecdote to reject medical statistics."
+    },
+    {
+      "text_cn": "正宗披萨就不该放菠萝，放菠萝的都能叫披萨？",
+      "text_en": "Authentic pizza shouldn't have pineapple. Can you even call it pizza if it has pineapple?",
+      "emotion": {"anger": 0.5, "sarcasm": 0.5, "fear": 0.0, "disgust": 0.6, "joy": 0.0, "sadness": 0.1, "surprise": 0.1, "contempt": 0.8},
+      "fallacy_types": ["诉诸情感", "偷换概念"],
+      "effective_weapons": ["clarifier", "debunk_hammer"],
+      "ineffective_weapons": ["statistical_lens"],
+      "explanation_cn": "用情感上的“正宗”定义替代食品分类标准。",
+      "explanation_en": "Replaces food classification with an emotional appeal to authenticity."
+    }
+  ]
+}

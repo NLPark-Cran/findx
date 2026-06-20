@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&family=ZCOOL+KuaiLe&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  /* Mercure 2.0 Light Theme */
+  --background: #f7f5f0;
+  --foreground: #2c2a26;
+  --card: #ffffff;
+  --card-foreground: #2c2a26;
+  --popover: #ffffff;
+  --popover-foreground: #2c2a26;
+  --primary: #b8976b;
+  --primary-foreground: #ffffff;
+  --secondary: #f1eee8;
+  --secondary-foreground: #2c2a26;
+  --muted: #ebe7df;
+  --muted-foreground: #6b665e;
+  --accent: #8a9a82;
+  --accent-foreground: #ffffff;
+  --destructive: #c17a5c;
+  --border: rgba(0, 0, 0, 0.06);
+  --input: rgba(0, 0, 0, 0.06);
+  --ring: #b8976b;
+  --chart-1: #b8976b;
+  --chart-2: #8a9a82;
+  --chart-3: #c17a5c;
+  --chart-4: #7a9ca8;
+  --chart-5: #a89078;
+  --radius: 1rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #2c2a26;
+  --sidebar-primary: #b8976b;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f1eee8;
+  --sidebar-accent-foreground: #2c2a26;
+  --sidebar-border: rgba(0, 0, 0, 0.06);
+  --sidebar-ring: #b8976b;
+}
+
+.dark {
+  /* Mercure 2.0 Dark Theme */
+  --background: #1a2233;
+  --foreground: #f5f0e6;
+  --card: #232d40;
+  --card-foreground: #f5f0e6;
+  --popover: #2a364d;
+  --popover-foreground: #f5f0e6;
+  --primary: #c9a04c;
+  --primary-foreground: #1a2233;
+  --secondary: #2d3a52;
+  --secondary-foreground: #f5f0e6;
+  --muted: #2d3a52;
+  --muted-foreground: #a8b0c0;
+  --accent: #8b9d83;
+  --accent-foreground: #f5f0e6;
+  --destructive: #b86b52;
+  --border: rgba(245, 240, 230, 0.1);
+  --input: rgba(245, 240, 230, 0.1);
+  --ring: #c9a04c;
+  --chart-1: #c9a04c;
+  --chart-2: #8b9d83;
+  --chart-3: #b86b52;
+  --chart-4: #6b8fa8;
+  --chart-5: #a89078;
+  --radius: 1rem;
+  --sidebar: #232d40;
+  --sidebar-foreground: #f5f0e6;
+  --sidebar-primary: #c9a04c;
+  --sidebar-primary-foreground: #1a2233;
+  --sidebar-accent: #2d3a52;
+  --sidebar-accent-foreground: #f5f0e6;
+  --sidebar-border: rgba(245, 240, 230, 0.1);
+  --sidebar-ring: #c9a04c;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Apple-like refined UI utilities */
+.font-display {
+  font-family: 'ZCOOL KuaiLe', 'Inter', 'Noto Sans SC', sans-serif;
+}
+
+.surface {
+  @apply bg-card rounded-2xl border border-border shadow-sm;
+}
+
+.surface-elevated {
+  @apply bg-card rounded-2xl border border-border shadow-md;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-all hover:opacity-90 hover:shadow-lg active:scale-95;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-medium text-card-foreground transition-all hover:bg-muted active:scale-95;
+}
+
+.text-balance {
+  text-wrap: balance;
+}

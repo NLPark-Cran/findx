@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "找猹 / FindX",
+    "description": "用逻辑武器击败网络杠精"
+  },
+  "nav": {
+    "home": "首页",
+    "battle": "闯关",
+    "arena": "对战",
+    "agent": "Agent",
+    "dashboard": "数据"
+  },
+  "home": {
+    "title": "找猹 / FindX",
+    "subtitle": "先识谬误，再亮剑器，击败评论区里的杠精",
+    "start": "开始闯关",
+    "pvp": "实时对战",
+    "agent": "训练 Agent"
+  },
+  "battle": {
+    "choose_level": "选择关卡",
+    "choose_level_subtitle": "难度越高，杠精的谬误越隐蔽",
+    "start": "开始战斗",
+    "comment": "敌方评论",
+    "actual_fallacies": "实际含有的谬误",
+    "emotion_radar": "情绪雷达",
+    "weapons": "逻辑武器",
+    "rebuttal": "自由反驳",
+    "submit": "出击",
+    "judging": "裁判判定中...",
+    "result": "判定结果",
+    "damage": "伤害",
+    "total_damage": "总伤害",
+    "combo": "连击",
+    "score": "得分",
+    "next": "下一条",
+    "back": "返回",
+    "next_step": "下一步",
+    "victory": "通关！",
+    "defeat": "失败...",
+    "detect_fallacy": "第一步：识别谬误",
+    "detect_hint": "这条评论里藏着什么逻辑谬误？选出 1-2 个最贴切的。",
+    "select_weapon": "第二步：选择武器",
+    "write_rebuttal": "第三步：自由反驳",
+    "detected": "已识别",
+    "selected_weapon": "已选武器",
+    "rebuttal_placeholder": "解释为什么这是谬误，并给出你的反击……",
+    "fallacy_detection": "识谬",
+    "weapon_match": "器配",
+    "rebuttal_quality": "反驳"
+  },
+  "arena": {
+    "title": "实时 PvP",
+    "create_room": "创建房间",
+    "join_room": "加入房间",
+    "room_id": "房间号",
+    "nickname": "昵称",
+    "waiting": "等待对手...",
+    "round": "第 {round} 轮"
+  },
+  "agent": {
+    "title": "Agent 战士",
+    "create": "创建 Agent",
+    "name": "名称",
+    "model": "模型",
+    "personality": "性格",
+    "system_prompt": "系统提示词",
+    "weapon_priority": "武器优先级",
+    "simulate": "模拟对战",
+    "challenge": "挑战对手",
+    "leaderboard": "排行榜"
+  },
+  "common": {
+    "language": "语言",
+    "loading": "加载中...",
+    "error": "出错了",
+    "retry": "重试"
+  }
+}
