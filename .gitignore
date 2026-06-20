@@ -22,3 +22,4 @@ out/
 .idea/
 .vscode/
 *.swp
+build.pid

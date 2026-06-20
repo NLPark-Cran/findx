@@ -46,23 +46,41 @@ export default function ArenaPage() {
   };
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="mb-6 text-3xl font-bold">{t("title")}</h1>
-      <Card className="border-white/10 bg-white/5">
+    <div className="mx-auto max-w-3xl px-6 py-10">
+      <h1 className="mb-8 text-3xl font-bold tracking-tight text-foreground">{t("title")}</h1>
+      <Card className="surface">
         <CardHeader>
-          <CardTitle>{t("join_room")}</CardTitle>
+          <CardTitle className="text-base font-medium">{t("join_room")}</CardTitle>
         </CardHeader>
-        <CardContent className="space-y-3">
-          <Input value={nickname} onChange={(e) => setNickname(e.target.value)} placeholder={t("nickname")} className="bg-white/5" />
-          <Input value={roomId} onChange={(e) => setRoomId(e.target.value)} placeholder={t("room_id")} className="bg-white/5" />
-          <div className="flex gap-2">
-            <Button onClick={createRoom}>{t("create_room")}</Button>
-            <Button variant="secondary" onClick={joinRoom}>{t("join_room")}</Button>
-            <Button variant="outline" onClick={sendMove}>Send Test Move</Button>
+        <CardContent className="space-y-4">
+          <Input
+            value={nickname}
+            onChange={(e) => setNickname(e.target.value)}
+            placeholder={t("nickname")}
+            className="rounded-xl border-border bg-muted/30"
+          />
+          <Input
+            value={roomId}
+            onChange={(e) => setRoomId(e.target.value)}
+            placeholder={t("room_id")}
+            className="rounded-xl border-border bg-muted/30"
+          />
+          <div className="flex flex-wrap gap-3">
+            <Button onClick={createRoom} className="btn-primary">
+              {t("create_room")}
+            </Button>
+            <Button variant="secondary" onClick={joinRoom} className="btn-secondary">
+              {t("join_room")}
+            </Button>
+            <Button variant="outline" onClick={sendMove} className="btn-secondary">
+              Send Test Move
+            </Button>
           </div>
-          <div className="mt-4 rounded bg-black/30 p-3 font-mono text-xs">
+          <div className="mt-4 max-h-64 overflow-auto rounded-2xl border border-border bg-muted/50 p-4 font-mono text-xs text-foreground">
             {log.map((l, i) => (
-              <div key={i}>{l}</div>
+              <div key={i} className="mb-1">
+                {l}
+              </div>
             ))}
           </div>
         </CardContent>

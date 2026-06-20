@@ -30,37 +30,64 @@ export default function AgentPage() {
   };
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="mb-6 text-3xl font-bold">{t("title")}</h1>
-      <Card className="border-white/10 bg-white/5">
+    <div className="mx-auto max-w-3xl px-6 py-10">
+      <h1 className="mb-8 text-3xl font-bold tracking-tight text-foreground">{t("title")}</h1>
+
+      <Card className="surface">
         <CardHeader>
-          <CardTitle>{t("create")}</CardTitle>
+          <CardTitle className="text-base font-medium">{t("create")}</CardTitle>
         </CardHeader>
-        <CardContent className="space-y-3">
-          <Input value={owner} onChange={(e) => setOwner(e.target.value)} placeholder="Owner username" className="bg-white/5" />
-          <Input value={name} onChange={(e) => setName(e.target.value)} placeholder={t("name")} className="bg-white/5" />
-          <Textarea value={prompt} onChange={(e) => setPrompt(e.target.value)} placeholder={t("system_prompt")} className="bg-white/5" />
-          <Button onClick={create}>{t("create")}</Button>
+        <CardContent className="space-y-4">
+          <Input
+            value={owner}
+            onChange={(e) => setOwner(e.target.value)}
+            placeholder="Owner username"
+            className="rounded-xl border-border bg-muted/30"
+          />
+          <Input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder={t("name")}
+            className="rounded-xl border-border bg-muted/30"
+          />
+          <Textarea
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+            placeholder={t("system_prompt")}
+            className="min-h-[120px] rounded-xl border-border bg-muted/30"
+          />
+          <Button onClick={create} className="btn-primary">
+            {t("create")}
+          </Button>
           {agentKey && (
-            <div className="rounded bg-black/30 p-3 text-xs break-all">
+            <div className="rounded-2xl border border-border bg-muted/50 p-4 text-xs break-all text-foreground">
               <strong>Agent Key:</strong> {agentKey}
             </div>
           )}
-          {response && <pre className="mt-2 max-h-40 overflow-auto rounded bg-black/30 p-3 text-xs">{response}</pre>}
+          {response && (
+            <pre className="mt-2 max-h-40 overflow-auto rounded-2xl border border-border bg-muted/50 p-4 text-xs text-foreground">
+              {response}
+            </pre>
+          )}
         </CardContent>
       </Card>
 
-      <Card className="mt-6 border-white/10 bg-white/5">
+      <Card className="surface mt-6">
         <CardHeader>
-          <CardTitle>{t("leaderboard")}</CardTitle>
+          <CardTitle className="text-base font-medium">{t("leaderboard")}</CardTitle>
         </CardHeader>
         <CardContent>
-          <Button variant="secondary" onClick={fetchLeaderboard}>Load</Button>
+          <Button variant="secondary" onClick={fetchLeaderboard} className="btn-secondary">
+            Load
+          </Button>
           <div className="mt-4 space-y-2">
             {leaderboard.map((a) => (
-              <div key={a.id} className="flex justify-between rounded bg-white/5 px-3 py-2">
-                <span>{a.name}</span>
-                <span className="font-mono text-pink-400">{a.rank_score}</span>
+              <div
+                key={a.id}
+                className="flex justify-between rounded-xl border border-border bg-muted/30 px-4 py-3 text-sm"
+              >
+                <span className="text-foreground">{a.name}</span>
+                <span className="font-mono text-primary">{a.rank_score}</span>
               </div>
             ))}
           </div>
