@@ -42,3 +42,4 @@ Long-running commands should redirect output to `/tmp/*.log` to avoid Cran Code 
 - Frontend health: `curl -sL https://findx.hub.tt2.li/`
 - Backend health: `curl -s https://findx.hub.tt2.li/api/health`
 - Levels API: `curl -s https://findx.hub.tt2.li/api/levels`
+- Showcase PPT: `https://findx.hub.tt2.li/showcase`
