@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,6 @@ interface PvPMsg {
 }
 
 export default function PvPPage() {
-  const t = useTranslations("common");
   const locale = useLocale();
   const wsRef = useRef<WebSocket | null>(null);
   const [connected, setConnected] = useState(false);
